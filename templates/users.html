@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+    <h1>Submitted Users</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.name }} - ({{ user.age }} years old)- Favorite color: {{ user.color }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to form</a>
+</body>
+</html>
